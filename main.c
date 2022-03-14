@@ -30,8 +30,8 @@ int main()
   
   // create all threads
   pthread_create(&(workerThreads[0]), NULL, calculateAvg, NULL);
-  pthread_create(&(workerThreads[1]), NULL, calculateMax, NULL);
   pthread_create(&(workerThreads[2]), NULL, calculateMin, NULL);
+  pthread_create(&(workerThreads[1]), NULL, calculateMax, NULL);
 
   // wait for each thread to finish execution
   for (int i = 0; i < N_THREADS; i++) {
@@ -39,9 +39,9 @@ int main()
   }
 
   // show results
-  printf("Average: %d\n", avg);
-  printf("Maximum: %d\n", global_max);
-  printf("Minimum: %d\n", global_min);
+  printf("The average value is %d\n", avg);
+  printf("The minimum value is %d\n", global_min);
+  printf("The maximum value is %d\n", global_max);
 
   return 0;
 }
