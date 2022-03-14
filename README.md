@@ -9,7 +9,7 @@ Exercise for creating multiple threads of execution on a single process. The pro
 
 Clone repository
 ```sh
-git clone https://github.com/LucasLBF/tutoria_03
+git clone https://github.com/LucasLBF/tutoria_03.git
 ```
 
 Change directories
